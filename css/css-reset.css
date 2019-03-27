@@ -44,6 +44,7 @@ table {
 
 a:hover {
 	text-decoration: none;
+	color: inherit;
 }
 
 button:focus {

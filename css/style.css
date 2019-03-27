@@ -11,7 +11,17 @@
 
 .subtitle {
   text-align: center;
-  margin-bottom: 60px; }
+  max-width: 470px;
+  margin: auto auto 60px auto;
+  letter-spacing: 1px; }
+
+.content-title {
+  color: #464646;
+  font-family: OpenSansRegular, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-transform: capitalize; }
 
 .main-font strong, header .navbar .nav-item .nav-link strong {
   font-family: OpenSansBold, Arial, sans-serif;
@@ -27,7 +37,8 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  letter-spacing: 3px; }
 
 .custom-btn {
   display: block;
@@ -42,6 +53,23 @@
   -moz-border-radius: 25px;
   border-radius: 25px;
   margin: 60px 0 20px 0; }
+
+.style-cst-icon {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  height: 55px;
+  width: 55px;
+  margin: auto;
+  background-color: #81868e;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center; }
+  .style-cst-icon:hover {
+    color: white; }
+
+.style-cst-icon.active {
+  background-color: #19bd9a; }
 
 .navbar-brand {
   text-transform: uppercase;
@@ -60,12 +88,12 @@ header {
     header .navbar-nav {
       margin-top: 15px; } }
   header .navbar .nav-item {
-    padding: 3px 10px;
+    padding: 0 10px;
     border-radius: 25px;
     border: 1px solid transparent; }
     @media screen and (max-width: 992px) {
       header .navbar .nav-item {
-        padding: 3px 6px;
+        padding: 0 6px;
         text-align: center; } }
     header .navbar .nav-item .nav-link {
       font-size: 16px;
@@ -86,16 +114,10 @@ header {
     max-width: 600px;
     margin: auto auto 220px auto; }
   header .pe-7s-angle-down {
-    color: white;
-    font-size: 30px;
-    display: flex;
+    margin-bottom: 80px;
     height: 40px;
     width: 40px;
-    margin: auto auto 80px auto;
-    background-color: #19bd9a;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center; }
+    background-color: #19bd9a; }
 
 .bouncy {
   padding: 80px 0 100px 0; }
@@ -109,5 +131,18 @@ header {
       text-align: left; }
     .bouncy .content .main-font, .bouncy .content header .navbar .nav-item .nav-link, header .navbar .nav-item .bouncy .content .nav-link {
       text-align: justify; }
+
+.about {
+  background-color: #f3f3f3;
+  padding: 80px 0 100px 0; }
+  .about .icons-menu {
+    display: flex;
+    justify-content: center; }
+    .about .icons-menu li {
+      margin: 0 10px 60px 10px; }
+  .about .main-font, .about header .navbar .nav-item .nav-link, header .navbar .nav-item .about .nav-link {
+    margin-bottom: 15px; }
+  .about .main-font.left-side, .about header .navbar .nav-item .left-side.nav-link, header .navbar .nav-item .about .left-side.nav-link {
+    font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */

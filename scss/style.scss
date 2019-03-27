@@ -4,6 +4,7 @@
 @import "../css/fonts.css";
 
 $green: #19bd9a;
+$gray: #81868e;
 $paddings: 80px 0 100px 0;
 
 @mixin max-screen($res) {
@@ -22,7 +23,18 @@ $paddings: 80px 0 100px 0;
 
 .subtitle {
   text-align: center;
-  margin-bottom: 60px;
+  max-width: 470px;
+  margin: auto auto 60px auto;
+  letter-spacing: 1px;
+}
+
+.content-title {
+  color: #464646;
+  font-family: OpenSansRegular, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
 }
 
 .main-font strong {
@@ -42,6 +54,7 @@ $paddings: 80px 0 100px 0;
   text-align: center;
   margin-bottom: 40px;
   font-size: 20px;
+  letter-spacing: 3px;
 }
 
 .custom-btn {
@@ -57,6 +70,26 @@ $paddings: 80px 0 100px 0;
   -moz-border-radius: 25px;
   border-radius: 25px;
   margin: 60px 0 20px 0;
+}
+
+.style-cst-icon {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  height: 55px;
+  width: 55px;
+  margin: auto;
+  background-color: $gray;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: white;
+  }
+}
+
+.style-cst-icon.active {
+  background-color: $green;
 }
 
 .navbar-brand {
@@ -84,9 +117,9 @@ header {
     }
   }
   .navbar .nav-item  {
-    padding: 3px 10px;
+    padding: 0 10px;
     @include max-screen(992px) {
-      padding: 3px 6px;
+      padding: 0 6px;
       text-align: center;
     }
     border-radius: 25px;
@@ -118,16 +151,10 @@ header {
     margin: auto auto 220px auto;
   }
   .pe-7s-angle-down {
-    color: white;
-    font-size: 30px;
-    display: flex;
+    margin-bottom: 80px;
     height: 40px;
     width: 40px;
-    margin: auto auto 80px auto;
     background-color: $green;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -148,3 +175,24 @@ header {
     }
   }
 }
+
+.about {
+  background-color: #f3f3f3;
+  padding: $paddings;
+  .icons-menu {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 10px 60px 10px;
+    }
+  }
+
+  .main-font {
+    margin-bottom: 15px;
+  }
+
+  .main-font.left-side {
+    font-size: 16px;
+  }
+}
+
