@@ -17,6 +17,7 @@ $paddings: 80px 0 100px 0;
   font-family: OpenSansRegular, Arial, sans-serif;
   color: #81868e;
   font-size: 14px;
+  line-height: 24px;
 }
 
 .subtitle {
@@ -41,6 +42,21 @@ $paddings: 80px 0 100px 0;
   text-align: center;
   margin-bottom: 40px;
   font-size: 20px;
+}
+
+.custom-btn {
+  display: block;
+  float: left;
+  font-family: OpenSansRegular, Arial, sans-serif;
+  font-size: 16px;
+  color: #333b46;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border: 1px solid #333b46;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  margin: 60px 0 20px 0;
 }
 
 .navbar-brand {
@@ -112,5 +128,23 @@ header {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.bouncy {
+  padding: $paddings;
+  .ipad {
+    background: url("../images/ipad.png") no-repeat center center;
+    background-size: contain;
+    height: 350px;
+  }
+  .content {
+    padding-top: 40px;
+    .title{
+      text-align: left;
+    }
+    .main-font {
+      text-align: justify;
+    }
   }
 }
