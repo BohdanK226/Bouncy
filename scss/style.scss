@@ -50,6 +50,7 @@ $paddings: 80px 0 100px 0;
 }
 
 header {
+  padding: 0.1px;
   background: url("../images/header-bg.jpg") no-repeat center center;
   background-size: cover;
 
@@ -57,10 +58,20 @@ header {
     justify-content: flex-end;
   }
 
+  .navbar-toggler-icon {
+    outline: none;
+  }
+
+  .navbar-nav {
+    @include max-screen(767px) {
+      margin-top: 15px;
+    }
+  }
   .navbar .nav-item  {
     padding: 3px 10px;
     @include max-screen(992px) {
       padding: 3px 6px;
+      text-align: center;
     }
     border-radius: 25px;
     border: 1px solid transparent;
@@ -78,5 +89,28 @@ header {
   }
   .navbar .nav-item.active {
     border: 1px solid white;
+  }
+  .title {
+    font-size: 35px;
+    color: white;
+    margin-top: 220px;
+  }
+  .subtitle {
+    font-size: 16px;
+    color: white;
+    max-width: 600px;
+    margin: auto auto 220px auto;
+  }
+  .pe-7s-angle-down {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: auto auto 80px auto;
+    background-color: $green;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -34,17 +34,24 @@
   font-family: BIGJOHN, Arial, sans-serif; }
 
 header {
+  padding: 0.1px;
   background: url("../images/header-bg.jpg") no-repeat center center;
   background-size: cover; }
   header .navbar-expand-md .navbar-collapse {
     justify-content: flex-end; }
+  header .navbar-toggler-icon {
+    outline: none; }
+  @media screen and (max-width: 767px) {
+    header .navbar-nav {
+      margin-top: 15px; } }
   header .navbar .nav-item {
     padding: 3px 10px;
     border-radius: 25px;
     border: 1px solid transparent; }
     @media screen and (max-width: 992px) {
       header .navbar .nav-item {
-        padding: 3px 6px; } }
+        padding: 3px 6px;
+        text-align: center; } }
     header .navbar .nav-item .nav-link {
       font-size: 16px;
       color: white;
@@ -54,5 +61,25 @@ header {
         text-shadow: white 0 0 3px; }
   header .navbar .nav-item.active {
     border: 1px solid white; }
+  header .title {
+    font-size: 35px;
+    color: white;
+    margin-top: 220px; }
+  header .subtitle {
+    font-size: 16px;
+    color: white;
+    max-width: 600px;
+    margin: auto auto 220px auto; }
+  header .pe-7s-angle-down {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: auto auto 80px auto;
+    background-color: #19bd9a;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
