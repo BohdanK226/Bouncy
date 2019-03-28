@@ -1,28 +1,77 @@
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".service-slider .owl-carousel").owlCarousel({
+        animateIn: 'fadeInDown',
+        animateOut: 'fadeOutDown',
             loop: true,
             margin: 10,
-            nav: true,
+            nav: false,
+            dots: true,
+            dotsContainer: '.service .icons-menu',
             items: 1,
             mouseDrag: false,
-            smartSpeed: 1000
+        autoplay: true,
+            smartSpeed: 1500
         }
     );
 
+    // customize navs buttons
     function menu_togler(selector, clickElement) {
-            if (!clickElement.hasClass('active')){
-                selector.each(function () {
-                    $(this).removeClass('active')
-                });
-                clickElement.addClass('active');
-            }
+        if (!clickElement.hasClass('active')) {
+            selector.each(function () {
+                $(this).removeClass('active')
+            });
+            clickElement.addClass('active');
+        }
     }
 
-    $('.style-cst-icon').click(function () {
-        menu_togler($('.style-cst-icon'), $(this));
+    $('.about .style-cst-icon').click(function () {
+        menu_togler($('.about .style-cst-icon'), $(this));
     });
 
     $('.nav-item').click(function () {
         menu_togler($('.nav-item'), $(this));
-    })
+    });
+
+    // customize circle plugin
+    var circle_viewed = false;
+    var circle_scroll = $('.circle');
+    var offset = circle_scroll.offset();
+    var circle_size = 125;
+    // if ($(window).width()<992) {
+    //     circle_size = 100;
+    // }
+    $(window).scroll(function () {
+        if ((($(document).scrollTop()) > ((parseFloat(offset.top)) - parseFloat($(window).height()))) && (!(circle_viewed))) { //if page skrolling
+            $('.circle-1').circleProgress({
+                size: circle_size,
+                startAngle: 0,
+                value: 0.8,
+                thickness: 5,
+                fill: {color: "#19bd9a"}
+            }).on('circle-animation-progress', function (event, progress) {
+                $(this).find('strong').html(parseInt(80 * progress) + '<i>%</i>');
+            });
+
+            $('.circle-2').circleProgress({
+                size: circle_size,
+                startAngle: 0,
+                value: 0.75,
+                thickness: 5,
+                fill: {color: "#19bd9a"}
+            }).on('circle-animation-progress', function (event, progress) {
+                $(this).find('strong').html(parseInt(75 * progress) + '<i>%</i>');
+            });
+
+            $('.circle-3').circleProgress({
+                size: circle_size,
+                startAngle: 0,
+                value: 0.6,
+                thickness: 5,
+                fill: {color: "#19bd9a"}
+            }).on('circle-animation-progress', function (event, progress) {
+                $(this).find('strong').html(parseInt(60 * progress) + '<i>%</i>');
+            });
+            circle_viewed = true;
+        }
+    });
 });

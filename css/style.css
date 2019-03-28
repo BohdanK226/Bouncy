@@ -1,5 +1,6 @@
 @import url(../css/bootstrap.min.css);
 @import url(../css/css-reset.css);
+@import url(../css/animate.css);
 @import url(../css/owl.carousel.css);
 @import url(../css/fonts.css);
 .main-font, header .navbar .nav-item .nav-link,
@@ -54,7 +55,7 @@
   border-radius: 25px;
   margin: 60px 0 20px 0; }
 
-.style-cst-icon {
+.style-cst-icon, .service .item-container .icons-menu button {
   color: white;
   font-size: 30px;
   display: flex;
@@ -65,10 +66,10 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center; }
-  .style-cst-icon:hover {
+  .style-cst-icon:hover, .service .item-container .icons-menu button:hover {
     color: white; }
 
-.style-cst-icon.active {
+.style-cst-icon.active, .service .item-container .icons-menu button.active {
   background-color: #19bd9a; }
 
 .navbar-brand {
@@ -179,15 +180,85 @@ header {
       display: flex;
       justify-content: space-around;
       align-items: baseline; }
+      @media screen and (max-width: 767px) {
+        .featured footer .container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
       .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link {
         color: white;
         font-size: 20px;
         letter-spacing: 1px; }
+        @media screen and (max-width: 767px) {
+          .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link {
+            margin-bottom: 40px; } }
         .featured footer .container .main-font strong, .featured footer .container header .navbar .nav-item .nav-link strong, header .navbar .nav-item .featured footer .container .nav-link strong {
           color: inherit; }
       .featured footer .container .custom-btn {
         color: white;
         border: 1px solid white;
-        margin: 0; }
+        margin: 0;
+        flex-shrink: 0; }
+
+.service {
+  padding: 80px 0 100px 0; }
+  .service .item-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; }
+    .service .item-container .icons-menu {
+      margin-right: 40px; }
+      .service .item-container .icons-menu button {
+        font-family: 'Pe-icon-7-stroke';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 15px;
+        border: none;
+        cursor: pointer; }
+        .service .item-container .icons-menu button:nth-child(1):before {
+          content: "\e60a"; }
+        .service .item-container .icons-menu button:nth-child(2):before {
+          content: "\e62a"; }
+        .service .item-container .icons-menu button:nth-child(3):before {
+          content: "\e6a4"; }
+        .service .item-container .icons-menu button:nth-child(4):before {
+          content: "\e69a"; }
+    .service .item-container .service-slider {
+      width: 100%; }
+      @media screen and (max-width: 768px) {
+        .service .item-container .service-slider .slide {
+          max-width: 80%; } }
+      @media screen and (max-width: 768px) {
+        .service .item-container .service-slider .slide {
+          max-width: 65%; } }
+    .service .item-container .service-slider .slide p:first-of-type {
+      margin-bottom: 40px;
+      font-size: 16px; }
+    .service .item-container .service-slider .main-font, .service .item-container .service-slider header .navbar .nav-item .nav-link, header .navbar .nav-item .service .item-container .service-slider .nav-link {
+      line-height: 25px; }
+  .service .circle {
+    position: relative;
+    margin: 60px 0 25px 0;
+    display: flex;
+    justify-content: center; }
+    .service .circle strong {
+      position: absolute;
+      font-family: OpenSansRegular, Arial, sans-serif;
+      font-size: 25px;
+      color: #81868e;
+      top: 50%;
+      left: 50%;
+      margin: -12px 0 0 -25px; }
+  .service .skill-type {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #81868e;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
