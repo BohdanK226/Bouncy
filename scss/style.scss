@@ -83,6 +83,7 @@ $paddings: 80px 0 100px 0;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
   &:hover {
     color: white;
   }
@@ -116,7 +117,8 @@ header {
       margin-top: 15px;
     }
   }
-  .navbar .nav-item  {
+
+  .navbar .nav-item {
     padding: 0 10px;
     @include max-screen(992px) {
       padding: 0 6px;
@@ -124,11 +126,13 @@ header {
     }
     border-radius: 25px;
     border: 1px solid transparent;
+
     .nav-link {
       @extend .main-font;
       font-size: 16px;
       color: white;
       text-transform: capitalize;
+
       &:hover {
         color: white;
         text-shadow: white 0 0 3px;
@@ -136,20 +140,24 @@ header {
     }
 
   }
+
   .navbar .nav-item.active {
     border: 1px solid white;
   }
+
   .title {
     font-size: 35px;
     color: white;
     margin-top: 220px;
   }
+
   .subtitle {
     font-size: 16px;
     color: white;
     max-width: 600px;
     margin: auto auto 220px auto;
   }
+
   .pe-7s-angle-down {
     margin-bottom: 80px;
     height: 40px;
@@ -160,16 +168,20 @@ header {
 
 .bouncy {
   padding: $paddings;
+
   .ipad {
     background: url("../images/ipad.png") no-repeat center center;
     background-size: contain;
     height: 350px;
   }
+
   .content {
     padding-top: 40px;
-    .title{
+
+    .title {
       text-align: left;
     }
+
     .main-font {
       text-align: justify;
     }
@@ -179,9 +191,11 @@ header {
 .about {
   background-color: #f3f3f3;
   padding: $paddings;
+
   .icons-menu {
     display: flex;
     justify-content: center;
+
     li {
       margin: 0 10px 60px 10px;
     }
@@ -196,3 +210,60 @@ header {
   }
 }
 
+.featured {
+  padding-top: 80px;
+
+  .item-container {
+    background: no-repeat center center;
+    background-size: cover;
+    height: 320px;
+    position: relative;
+
+    .overlay {
+      background-color: black;
+      font-family: SourceSansProLight, Arial, sans-serif;
+      letter-spacing: 1px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      opacity: .85;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: opacity .3s;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
+
+  footer {
+    background: url("../images/feauture-footer-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px 0 40px 0;
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      .main-font {
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1px;
+        strong {
+          color: inherit;
+        }
+      }
+      .custom-btn {
+        color: white;
+        border: 1px solid white;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -145,4 +145,49 @@ header {
   .about .main-font.left-side, .about header .navbar .nav-item .left-side.nav-link, header .navbar .nav-item .about .left-side.nav-link {
     font-size: 16px; }
 
+.featured {
+  padding-top: 80px; }
+  .featured .item-container {
+    background: no-repeat center center;
+    background-size: cover;
+    height: 320px;
+    position: relative; }
+    .featured .item-container .overlay {
+      background-color: black;
+      font-family: SourceSansProLight, Arial, sans-serif;
+      letter-spacing: 1px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      opacity: .85;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: opacity .3s;
+      text-transform: uppercase; }
+      .featured .item-container .overlay:hover {
+        opacity: 0; }
+  .featured footer {
+    background: url("../images/feauture-footer-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px 0 40px 0; }
+    .featured footer .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline; }
+      .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link {
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1px; }
+        .featured footer .container .main-font strong, .featured footer .container header .navbar .nav-item .nav-link strong, header .navbar .nav-item .featured footer .container .nav-link strong {
+          color: inherit; }
+      .featured footer .container .custom-btn {
+        color: white;
+        border: 1px solid white;
+        margin: 0; }
+
 /*# sourceMappingURL=style.css.map */
