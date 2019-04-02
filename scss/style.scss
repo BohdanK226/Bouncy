@@ -392,6 +392,7 @@ header {
 
 .portfolio {
   padding: $paddings;
+  background-color: #f3f3f3;
   .masonry-menu {
     display: flex;
     justify-content: center;
@@ -542,6 +543,93 @@ header {
       margin: 0;
       color: white;
       border: 1px solid white;
+    }
+  }
+}
+
+.team {
+  padding: $paddings;
+  .team-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include max-screen(767px) {
+      flex-direction: column;
+    }
+    .photo-container {
+      width: 280px;
+      height: 370px;
+      background: no-repeat center center;
+      background-size: cover;
+      @include max-screen(767px) {
+        margin-bottom: 20px;
+      }
+    }
+    .description {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      @include max-screen(767px) {
+        text-align: center;
+      }
+      .name {
+        font-family: OpenSansRegular, Arial, sans-serif;
+        font-size: 20px;
+        color: #464646;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        span {
+          display: block;
+          font-family: SourceSansProLight, Arial, sans-serif;
+          font-size: 14px;
+          color: $gray;
+          text-transform: uppercase;
+          margin-top: 20px;
+        }
+      }
+      .main-font {
+        margin-bottom: 50px;
+      }
+      .skills li {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+        span {
+          font-family: SourceSansProLight, Arial, sans-serif;
+          font-size: 14px;
+          color: $gray;
+          text-transform: uppercase;
+        }
+        .progress {
+          width: 100%;
+          margin-top: 10px;
+          height: 5px;
+          border-radius: 0;
+          .progress-bar {
+            background-color: $green;
+          }
+        }
+      }
+    }
+  }
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    button {
+      height: 12px;
+      width: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid $green;
+      margin: 5px;
+      transition: all .5s;
+    }
+    button.active {
+      background-color: $green;
     }
   }
 }

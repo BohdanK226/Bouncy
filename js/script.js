@@ -14,6 +14,19 @@ $(document).ready(function () {
         }
     );
 
+    $(".team-slider").owlCarousel({
+        animateIn: 'fadeInRight',
+        animateOut: 'fadeOutLeft',
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            mouseDrag: false,
+            autoplay: true,
+            smartSpeed: 2500
+        }
+    );
+
     // customize navs buttons
     function menu_togler(selector, clickElement) {
         if (!clickElement.hasClass('active')) {
