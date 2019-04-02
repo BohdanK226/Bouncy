@@ -355,3 +355,193 @@ header {
     text-align: center;
   }
 }
+
+.impressed{
+  padding: $paddings;
+  background: url("../images/impressed-bg.jpg") no-repeat center top;
+  background-size: cover;
+  .content-title {
+    color: #f3f3f3;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  .main-font {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+  .sign {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .imac {
+    position: relative;
+    margin-top: -110px;
+    text-align: right;
+    @include max-screen(767px) {
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
+
+.portfolio {
+  padding: $paddings;
+  .masonry-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    @include max-screen(767px) {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+    }
+    li {
+      margin: 0 15px;
+      @include max-screen(767px) {
+        margin: 0;
+        padding: 15px 0;
+        &:hover{
+          background-color: #f0f0f0;
+        }
+      }
+      a {
+        position: relative;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        font-size: 16px;
+        color: #464646;
+        text-transform: capitalize;
+        padding: 10px 2px;
+        display: block;
+        @include max-screen(767px) {
+          width: 100%;
+        }
+        &:hover {
+          color: $gray;
+        }
+        &:hover:after {
+          content: '';
+          height: 2px;
+          width: 40px;
+          background-color: $green;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+  .masonry-grid {
+    margin-bottom: 40px;
+  }
+  .persent-size {
+    width: 25%;
+    @include max-screen(767px) {
+      width: 50%;
+    }
+    @include max-screen(575px) {
+      width: 100%;
+    }
+  }
+  .masonry-item {
+    padding: 5px;
+    box-sizing: border-box;
+    .item-content {
+      img {
+        width: 100%;
+      }
+      position: relative;
+      .masonry-overlay {
+        position: absolute;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        transition: .4s opacity;
+        &:hover {
+          opacity: 1;
+        }
+        h4 {
+          margin-bottom: 50px;
+          font-family: SourceSansProLight, Arial, sans-serif;
+          font-size: 20px;
+          color: $green;
+          text-transform: uppercase;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 20px;
+            left: 0;
+            bottom: -20px;
+            background-color: $green;
+          }
+        }
+        .main-font {
+          font-size: 12px;
+          line-height: 20px;
+          margin-bottom: 30px;
+        }
+        .social-icons {
+          display: flex;
+          justify-content: flex-start;
+          margin-right: 10px;
+          li {
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 30px;
+              width: 30px;
+              font-size: 15px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              margin-right: 10px;
+              background-color: black;
+              color: $gray;
+              &:hover {
+                color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .start-project {
+    padding: 60px 15px;
+    background: url("../images/portfolio-bg.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .main-font {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: center;
+    }
+    .custom-btn {
+      margin: 0;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}

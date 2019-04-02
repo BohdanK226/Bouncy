@@ -74,4 +74,12 @@ $(document).ready(function () {
             circle_viewed = true;
         }
     });
+
+    $('.masonry-grid').masonry({
+        // options
+        itemSelector: '.masonry-item',
+        columnWidth: '.persent-size',
+        horizontalOrder: true,
+        percentPosition: true
+    });
 });
