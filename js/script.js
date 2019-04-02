@@ -49,7 +49,7 @@ $(document).ready(function () {
             dots: true,
             items: 1,
             mouseDrag: false,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 2500,
             autoplayHoverPause: true,
             dotsContainer: '.news .custom-dots'

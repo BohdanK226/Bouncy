@@ -248,6 +248,7 @@ header {
     background: url("../images/feauture-footer-bg.jpg") no-repeat center center;
     background-size: cover;
     padding: 40px 0 40px 0;
+
     .container {
       display: flex;
       justify-content: space-around;
@@ -257,6 +258,7 @@ header {
         justify-content: center;
         align-items: center;
       }
+
       .main-font {
         color: white;
         font-size: 20px;
@@ -264,10 +266,12 @@ header {
         @include max-screen(767px) {
           margin-bottom: 40px;
         }
+
         strong {
           color: inherit;
         }
       }
+
       .custom-btn {
         color: white;
         border: 1px solid white;
@@ -280,12 +284,15 @@ header {
 
 .service {
   padding: $paddings;
+
   .item-container {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+
     .icons-menu {
       margin-right: 40px;
+
       button {
         @extend .style-cst-icon;
         font-family: 'Pe-icon-7-stroke';
@@ -299,44 +306,54 @@ header {
         margin-bottom: 15px;
         border: none;
         cursor: pointer;
+
         &:nth-child(1):before {
           content: "\e60a";
         }
+
         &:nth-child(2):before {
           content: "\e62a";
         }
+
         &:nth-child(3):before {
           content: "\e6a4";
         }
+
         &:nth-child(4):before {
           content: "\e69a";
         }
       }
     }
+
     .service-slider {
       width: 100%;
+
       .slide {
-        @include max-screen(768px){
+        @include max-screen(768px) {
           max-width: 80%;
         }
-        @include max-screen(768px){
+        @include max-screen(768px) {
           max-width: 65%;
         }
       }
     }
+
     .service-slider .slide p:first-of-type {
       margin-bottom: 40px;
       font-size: 16px;
     }
+
     .service-slider .main-font {
       line-height: 25px;
     }
   }
+
   .circle {
     position: relative;
     margin: 60px 0 25px 0;
     display: flex;
     justify-content: center;
+
     strong {
       position: absolute;
       font-family: OpenSansRegular, Arial, sans-serif;
@@ -347,6 +364,7 @@ header {
       margin: -12px 0 0 -25px;
     }
   }
+
   .skill-type {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -356,26 +374,30 @@ header {
   }
 }
 
-.impressed{
+.impressed {
   padding: $paddings;
   background: url("../images/impressed-bg.jpg") no-repeat center top;
   background-size: cover;
+
   .content-title {
     color: #f3f3f3;
     margin-bottom: 60px;
     text-transform: uppercase;
   }
+
   .main-font {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 50px;
   }
+
   .sign {
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
   }
+
   .imac {
     position: relative;
     margin-top: -110px;
@@ -383,6 +405,7 @@ header {
     @include max-screen(767px) {
       margin-bottom: 30px;
     }
+
     img {
       width: 100%;
       max-width: 400px;
@@ -393,6 +416,7 @@ header {
 .portfolio {
   padding: $paddings;
   background-color: #f3f3f3;
+
   .masonry-menu {
     display: flex;
     justify-content: center;
@@ -403,15 +427,17 @@ header {
       align-items: stretch;
       text-align: center;
     }
+
     li {
       margin: 0 15px;
       @include max-screen(767px) {
         margin: 0;
         padding: 15px 0;
-        &:hover{
+        &:hover {
           background-color: #f0f0f0;
         }
       }
+
       a {
         position: relative;
         font-family: OpenSansRegular, Arial, sans-serif;
@@ -423,9 +449,11 @@ header {
         @include max-screen(767px) {
           width: 100%;
         }
+
         &:hover {
           color: $gray;
         }
+
         &:hover:after {
           content: '';
           height: 2px;
@@ -439,9 +467,11 @@ header {
       }
     }
   }
+
   .masonry-grid {
     margin-bottom: 40px;
   }
+
   .persent-size {
     width: 25%;
     @include max-screen(991px) {
@@ -451,15 +481,19 @@ header {
       width: 100%;
     }
   }
+
   .masonry-item {
     padding: 5px;
     box-sizing: border-box;
+
     .item-content {
       img {
         width: 100%;
       }
+
       position: relative;
       $margin-btm: 30px;
+
       .masonry-overlay {
         position: absolute;
         opacity: 0;
@@ -474,9 +508,11 @@ header {
         height: 100%;
         background-color: rgba(0, 0, 0, .7);
         transition: .4s opacity;
+
         &:hover {
           opacity: 1;
         }
+
         h4 {
           margin-bottom: $margin-btm;
           font-family: SourceSansProLight, Arial, sans-serif;
@@ -484,6 +520,7 @@ header {
           color: $green;
           text-transform: uppercase;
           position: relative;
+
           &:after {
             content: '';
             position: absolute;
@@ -494,15 +531,18 @@ header {
             background-color: $green;
           }
         }
+
         .main-font {
           font-size: 12px;
           line-height: 20px;
           margin-bottom: $margin-btm;
         }
+
         .social-icons {
           display: flex;
           justify-content: flex-start;
           margin-right: 10px;
+
           li {
             a {
               display: flex;
@@ -517,6 +557,7 @@ header {
               margin-right: 10px;
               background-color: black;
               color: $gray;
+
               &:hover {
                 color: $green;
               }
@@ -526,6 +567,7 @@ header {
       }
     }
   }
+
   .start-project {
     padding: 60px 15px;
     background: url("../images/portfolio-bg.jpg") no-repeat center center;
@@ -533,6 +575,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     .main-font {
       color: white;
       font-size: 20px;
@@ -540,6 +583,7 @@ header {
       width: 100%;
       text-align: center;
     }
+
     .custom-btn {
       margin: 0;
       color: white;
@@ -550,6 +594,7 @@ header {
 
 .team {
   padding: $paddings;
+
   .team-content {
     display: flex;
     justify-content: space-between;
@@ -557,6 +602,7 @@ header {
     @include max-screen(767px) {
       flex-direction: column;
     }
+
     .photo-container {
       width: 280px;
       height: 370px;
@@ -566,6 +612,7 @@ header {
         margin-bottom: 20px;
       }
     }
+
     .description {
       max-width: 400px;
       display: flex;
@@ -574,12 +621,14 @@ header {
       @include max-screen(767px) {
         text-align: center;
       }
+
       .name {
         font-family: OpenSansRegular, Arial, sans-serif;
         font-size: 20px;
         color: #464646;
         text-transform: capitalize;
         margin-bottom: 35px;
+
         span {
           display: block;
           font-family: SourceSansProLight, Arial, sans-serif;
@@ -589,25 +638,30 @@ header {
           margin-top: 20px;
         }
       }
+
       .main-font {
         margin-bottom: 50px;
       }
+
       .skills li {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 35px;
+
         span {
           font-family: SourceSansProLight, Arial, sans-serif;
           font-size: 14px;
           color: $gray;
           text-transform: uppercase;
         }
+
         .progress {
           width: 100%;
           margin-top: 10px;
           height: 5px;
           border-radius: 0;
+
           .progress-bar {
             background-color: $green;
           }
@@ -615,10 +669,12 @@ header {
       }
     }
   }
+
   .owl-dots {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+
     button {
       height: 12px;
       width: 12px;
@@ -629,6 +685,7 @@ header {
       margin: 5px;
       transition: all .5s;
     }
+
     button.active {
       background-color: $green;
     }
@@ -642,6 +699,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   .main-font {
     color: white;
     font-size: 20px;
@@ -649,6 +707,7 @@ header {
     width: 100%;
     text-align: center;
   }
+
   .custom-btn {
     margin: 0;
     color: white;
@@ -659,22 +718,23 @@ header {
 .testimonials {
   background-color: #f3f3f3;
   padding: $paddings;
+
   .slider-content {
     display: flex;
     justify-content: space-between;
     padding: 60px 100px;
     background-color: white;
-    @include max-screen(991px){
+    @include max-screen(991px) {
       padding: 30px 50px;
     }
-    @include max-screen(767px){
+    @include max-screen(767px) {
       flex-direction: column;
       align-items: center;
       padding: 20px 35px;
     }
 
     .responder-photo {
-      @include max-screen(767px){
+      @include max-screen(767px) {
         margin-bottom: 20px;
       }
       margin-right: 60px;
@@ -687,16 +747,19 @@ header {
       background: no-repeat center center;
       background-size: cover;
     }
+
     .description {
       .main-font {
         margin-bottom: 30px;
       }
+
       .name {
         font-family: OpenSansBold, Arial, sans-serif;
         font-size: 16px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $green;
+
         span {
           display: block;
           margin-top: 10px;
@@ -706,11 +769,13 @@ header {
       }
     }
   }
+
   .owl-dots {
     display: flex;
     justify-content: center;
     background-color: white;
     padding-bottom: 60px;
+
     button {
       height: 12px;
       width: 12px;
@@ -721,6 +786,7 @@ header {
       margin: 5px;
       transition: all .5s;
     }
+
     button.active {
       background-color: $green;
     }
@@ -731,25 +797,30 @@ header {
   padding: $paddings;
   background: url("../images/news-bg.jpg") no-repeat center center;
   background-size: cover;
+
   .container {
     position: relative;
   }
+
   .title {
     text-align: left;
     color: white;
   }
+
   .subtitle {
     text-align: left;
     margin: 0 0 100px 0;
   }
+
   .news-slider {
     position: relative;
     padding-left: 100px;
     max-width: 600px;
-    @include  max-screen(767px){
+    @include max-screen(767px) {
       padding-left: 0;
       padding-right: 30px;
     }
+
     .article-title {
       color: #e1e4e9;
       font-family: OpenSansRegular, Arial, sans-serif;
@@ -757,32 +828,40 @@ header {
       margin-bottom: 12px;
       text-transform: capitalize;
     }
+
     .name {
       font-family: SourceSansProLight, Arial, sans-serif;
       color: $gray;
       font-size: 14px;
       text-transform: uppercase;
+
       span {
         color: $green;
       }
+
       margin-bottom: 20px;
     }
+
     .social-stat {
       font-family: SourceSansProLight, Arial, sans-serif;
       font-size: 14px;
       color: #464646;
       margin-bottom: 50px;
     }
+
     .main-font {
       margin-bottom: 80px;
     }
+
     a.main-font {
       text-transform: capitalize;
+
       &:hover {
         color: #fff;
       }
     }
   }
+
   .custom-dots {
     display: flex;
     flex-direction: column;
@@ -791,6 +870,7 @@ header {
     position: absolute;
     right: 0;
     top: 0;
+
     button {
       z-index: 2;
       display: block;
@@ -805,16 +885,78 @@ header {
       border: 1px solid #b2b3b3;
       margin: 5px;
       transition: all .5s;
+
       &:hover {
         cursor: pointer;
       }
+
       @include max-screen(767px) {
         height: 28px;
         width: 28px;
       }
     }
+
     button.active {
       background-color: #b2b3b3;
+    }
+  }
+}
+
+.offers {
+  padding: $paddings;
+
+  ul {
+    margin: auto;
+    max-width: 235px;
+    border: 1px solid #e7e7e7;
+    @include max-screen(767px){
+      margin-bottom: 20px;
+    }
+    .header {
+      padding: 25px 0;
+      font-family: OpenSansBold, Arial, sans-serif;
+      font-size: 20px;
+      color: white;
+      background-color: $green;
+      text-transform: uppercase;
+      text-align: center;
+      a {
+        font-size: 16px;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        color: white;
+        text-transform: capitalize;
+      }
+    }
+
+    .price {
+      text-align: center;
+      padding: 70px 0 100px 0;
+      font-family: SourceSansProBlack, Arial, sans-serif;
+      font-size: 42px;
+      color: $green;
+
+      span {
+        margin-top: 10px;
+        display: block;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        color: $gray;
+        font-size: 20px;
+
+      }
+    }
+  }
+
+  .offer-block {
+    .offer-item {
+      @extend .main-font;
+      padding: 0 30px ;
+      margin: 8px 0;
+      &:first-of-type {
+        margin-top: 30px;
+      }
+    }
+    .mb {
+      margin-bottom: 30px;
     }
   }
 }
