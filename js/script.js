@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".service-slider .owl-carousel").owlCarousel({
-        animateIn: 'fadeInDown',
-        animateOut: 'fadeOutDown',
+            animateIn: 'fadeInDown',
+            animateOut: 'fadeOutDown',
             loop: true,
             margin: 10,
             nav: false,
@@ -9,14 +9,14 @@ $(document).ready(function () {
             dotsContainer: '.service .icons-menu',
             items: 1,
             mouseDrag: false,
-        autoplay: true,
+            autoplay: true,
             smartSpeed: 1500
         }
     );
 
     $(".team-slider").owlCarousel({
-        animateIn: 'fadeInRight',
-        animateOut: 'fadeOutLeft',
+            animateIn: 'fadeInRight',
+            animateOut: 'fadeOutLeft',
             loop: true,
             nav: false,
             dots: true,
@@ -24,6 +24,20 @@ $(document).ready(function () {
             mouseDrag: false,
             autoplay: true,
             smartSpeed: 2500
+        }
+    );
+
+    $(".testimonials-slider").owlCarousel({
+            animateIn: 'fadeInRight',
+            animateOut: 'fadeOutLeft',
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            mouseDrag: false,
+            autoplay: true,
+            smartSpeed: 2500,
+            autoplayHoverPause: true
         }
     );
 

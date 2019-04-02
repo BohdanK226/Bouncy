@@ -512,4 +512,63 @@ header {
     color: white;
     border: 1px solid white; }
 
+.testimonials {
+  background-color: #f3f3f3;
+  padding: 80px 0 100px 0; }
+  .testimonials .slider-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: white; }
+    @media screen and (max-width: 991px) {
+      .testimonials .slider-content {
+        padding: 30px 50px; } }
+    @media screen and (max-width: 767px) {
+      .testimonials .slider-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 35px; } }
+    .testimonials .slider-content .responder-photo {
+      margin-right: 60px;
+      flex-shrink: 0;
+      height: 130px;
+      width: 130px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: no-repeat center center;
+      background-size: cover; }
+      @media screen and (max-width: 767px) {
+        .testimonials .slider-content .responder-photo {
+          margin-bottom: 20px; } }
+    .testimonials .slider-content .description .main-font, .testimonials .slider-content .description header .navbar .nav-item .nav-link, header .navbar .nav-item .testimonials .slider-content .description .nav-link {
+      margin-bottom: 30px; }
+    .testimonials .slider-content .description .name {
+      font-family: OpenSansBold, Arial, sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #19bd9a; }
+      .testimonials .slider-content .description .name span {
+        display: block;
+        margin-top: 10px;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        color: #464646; }
+  .testimonials .owl-dots {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 60px; }
+    .testimonials .owl-dots button {
+      height: 12px;
+      width: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #19bd9a;
+      margin: 5px;
+      transition: all .5s; }
+    .testimonials .owl-dots button.active {
+      background-color: #19bd9a; }
+
 /*# sourceMappingURL=style.css.map */
