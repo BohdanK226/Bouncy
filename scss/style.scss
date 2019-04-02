@@ -444,7 +444,7 @@ header {
   }
   .persent-size {
     width: 25%;
-    @include max-screen(767px) {
+    @include max-screen(991px) {
       width: 50%;
     }
     @include max-screen(575px) {
@@ -459,13 +459,14 @@ header {
         width: 100%;
       }
       position: relative;
+      $margin-btm: 30px;
       .masonry-overlay {
         position: absolute;
         opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
+        padding: 10px 20px;
         box-sizing: border-box;
         top: 0;
         left: 0;
@@ -477,7 +478,7 @@ header {
           opacity: 1;
         }
         h4 {
-          margin-bottom: 50px;
+          margin-bottom: $margin-btm;
           font-family: SourceSansProLight, Arial, sans-serif;
           font-size: 20px;
           color: $green;
@@ -496,7 +497,7 @@ header {
         .main-font {
           font-size: 12px;
           line-height: 20px;
-          margin-bottom: 30px;
+          margin-bottom: $margin-btm;
         }
         .social-icons {
           display: flex;
@@ -631,5 +632,26 @@ header {
     button.active {
       background-color: $green;
     }
+  }
+}
+
+.contact-us {
+  padding: 60px 15px;
+  background: url("../images/contact-bg.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .main-font {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .custom-btn {
+    margin: 0;
+    color: white;
+    border: 1px solid white;
   }
 }

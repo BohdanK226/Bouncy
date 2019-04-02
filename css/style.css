@@ -336,7 +336,7 @@ header {
     margin-bottom: 40px; }
   .portfolio .persent-size {
     width: 25%; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
       .portfolio .persent-size {
         width: 50%; } }
     @media screen and (max-width: 575px) {
@@ -355,7 +355,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
+        padding: 10px 20px;
         box-sizing: border-box;
         top: 0;
         left: 0;
@@ -366,7 +366,7 @@ header {
         .portfolio .masonry-item .item-content .masonry-overlay:hover {
           opacity: 1; }
         .portfolio .masonry-item .item-content .masonry-overlay h4 {
-          margin-bottom: 50px;
+          margin-bottom: 30px;
           font-family: SourceSansProLight, Arial, sans-serif;
           font-size: 20px;
           color: #19bd9a;
@@ -493,5 +493,23 @@ header {
       transition: all .5s; }
     .team .owl-dots button.active {
       background-color: #19bd9a; }
+
+.contact-us {
+  padding: 60px 15px;
+  background: url("../images/contact-bg.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .contact-us .main-font, .contact-us header .navbar .nav-item .nav-link, header .navbar .nav-item .contact-us .nav-link {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center; }
+  .contact-us .custom-btn {
+    margin: 0;
+    color: white;
+    border: 1px solid white; }
 
 /*# sourceMappingURL=style.css.map */
