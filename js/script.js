@@ -41,6 +41,21 @@ $(document).ready(function () {
         }
     );
 
+    $(".news-slider").owlCarousel({
+            animateIn: 'fadeInDown',
+            animateOut: 'fadeOutDown',
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            mouseDrag: false,
+            autoplay: false,
+            smartSpeed: 2500,
+            autoplayHoverPause: true,
+            dotsContainer: '.news .custom-dots'
+        }
+    );
+
     // customize navs buttons
     function menu_togler(selector, clickElement) {
         if (!clickElement.hasClass('active')) {

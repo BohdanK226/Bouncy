@@ -571,4 +571,80 @@ header {
     .testimonials .owl-dots button.active {
       background-color: #19bd9a; }
 
+.news {
+  padding: 80px 0 100px 0;
+  background: url("../images/news-bg.jpg") no-repeat center center;
+  background-size: cover; }
+  .news .container {
+    position: relative; }
+  .news .title {
+    text-align: left;
+    color: white; }
+  .news .subtitle {
+    text-align: left;
+    margin: 0 0 100px 0; }
+  .news .news-slider {
+    position: relative;
+    padding-left: 100px;
+    max-width: 600px; }
+    @media screen and (max-width: 767px) {
+      .news .news-slider {
+        padding-left: 0;
+        padding-right: 30px; } }
+    .news .news-slider .article-title {
+      color: #e1e4e9;
+      font-family: OpenSansRegular, Arial, sans-serif;
+      font-size: 20px;
+      margin-bottom: 12px;
+      text-transform: capitalize; }
+    .news .news-slider .name {
+      font-family: SourceSansProLight, Arial, sans-serif;
+      color: #81868e;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      .news .news-slider .name span {
+        color: #19bd9a; }
+    .news .news-slider .social-stat {
+      font-family: SourceSansProLight, Arial, sans-serif;
+      font-size: 14px;
+      color: #464646;
+      margin-bottom: 50px; }
+    .news .news-slider .main-font, .news .news-slider header .navbar .nav-item .nav-link, header .navbar .nav-item .news .news-slider .nav-link {
+      margin-bottom: 80px; }
+    .news .news-slider a.main-font, .news .news-slider header .navbar .nav-item a.nav-link, header .navbar .nav-item .news .news-slider a.nav-link {
+      text-transform: capitalize; }
+      .news .news-slider a.main-font:hover, .news .news-slider header .navbar .nav-item a.nav-link:hover, header .navbar .nav-item .news .news-slider a.nav-link:hover {
+        color: #fff; }
+  .news .custom-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .news .custom-dots button {
+      z-index: 2;
+      display: block;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #b2b3b3;
+      margin: 5px;
+      transition: all .5s; }
+      .news .custom-dots button:hover {
+        cursor: pointer; }
+      @media screen and (max-width: 767px) {
+        .news .custom-dots button {
+          height: 28px;
+          width: 28px; } }
+    .news .custom-dots button.active {
+      background-color: #b2b3b3; }
+
 /*# sourceMappingURL=style.css.map */
