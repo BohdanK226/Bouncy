@@ -3,7 +3,7 @@
 @import url(../css/animate.css);
 @import url(../css/owl.carousel.css);
 @import url(../css/fonts.css);
-.main-font, header .navbar .nav-item .nav-link, .offers .offer-block .offer-item, .subscribe form input,
+.main-font, header .navbar .nav-item .nav-link, .offers .offer-block .offer-item, .subscribe form input, .contacts .contact-form form input,
 .subtitle {
   font-family: OpenSansRegular, Arial, sans-serif;
   color: #81868e;
@@ -24,12 +24,12 @@
   margin-bottom: 40px;
   text-transform: capitalize; }
 
-.main-font strong, header .navbar .nav-item .nav-link strong, .offers .offer-block .offer-item strong, .subscribe form input strong {
+.main-font strong, header .navbar .nav-item .nav-link strong, .offers .offer-block .offer-item strong, .subscribe form input strong, .contacts .contact-form form input strong {
   font-family: OpenSansBold, Arial, sans-serif;
   font-size: 14px;
   color: #636971; }
 
-.main-font .green, header .navbar .nav-item .nav-link .green, .offers .offer-block .offer-item .green, .subscribe form input .green {
+.main-font .green, header .navbar .nav-item .nav-link .green, .offers .offer-block .offer-item .green, .subscribe form input .green, .contacts .contact-form form input .green {
   color: #19bd9a; }
 
 .title {
@@ -130,7 +130,7 @@ header {
     padding-top: 40px; }
     .bouncy .content .title {
       text-align: left; }
-    .bouncy .content .main-font, .bouncy .content header .navbar .nav-item .nav-link, header .navbar .nav-item .bouncy .content .nav-link, .bouncy .content .offers .offer-block .offer-item, .offers .offer-block .bouncy .content .offer-item, .bouncy .content .subscribe form input, .subscribe form .bouncy .content input {
+    .bouncy .content .main-font, .bouncy .content header .navbar .nav-item .nav-link, header .navbar .nav-item .bouncy .content .nav-link, .bouncy .content .offers .offer-block .offer-item, .offers .offer-block .bouncy .content .offer-item, .bouncy .content .subscribe form input, .subscribe form .bouncy .content input, .bouncy .content .contacts .contact-form form input, .contacts .contact-form form .bouncy .content input {
       text-align: justify; }
 
 .about {
@@ -141,9 +141,9 @@ header {
     justify-content: center; }
     .about .icons-menu li {
       margin: 0 10px 60px 10px; }
-  .about .main-font, .about header .navbar .nav-item .nav-link, header .navbar .nav-item .about .nav-link, .about .offers .offer-block .offer-item, .offers .offer-block .about .offer-item, .about .subscribe form input, .subscribe form .about input {
+  .about .main-font, .about header .navbar .nav-item .nav-link, header .navbar .nav-item .about .nav-link, .about .offers .offer-block .offer-item, .offers .offer-block .about .offer-item, .about .subscribe form input, .subscribe form .about input, .about .contacts .contact-form form input, .contacts .contact-form form .about input {
     margin-bottom: 15px; }
-  .about .main-font.left-side, .about header .navbar .nav-item .left-side.nav-link, header .navbar .nav-item .about .left-side.nav-link, .about .offers .offer-block .left-side.offer-item, .offers .offer-block .about .left-side.offer-item, .about .subscribe form input.left-side, .subscribe form .about input.left-side {
+  .about .main-font.left-side, .about header .navbar .nav-item .left-side.nav-link, header .navbar .nav-item .about .left-side.nav-link, .about .offers .offer-block .left-side.offer-item, .offers .offer-block .about .left-side.offer-item, .about .subscribe form input.left-side, .subscribe form .about input.left-side, .about .contacts .contact-form form input.left-side, .contacts .contact-form form .about input.left-side {
     font-size: 16px; }
 
 .featured {
@@ -185,14 +185,14 @@ header {
           flex-direction: column;
           justify-content: center;
           align-items: center; } }
-      .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link, .featured footer .container .offers .offer-block .offer-item, .offers .offer-block .featured footer .container .offer-item, .featured footer .container .subscribe form input, .subscribe form .featured footer .container input {
+      .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link, .featured footer .container .offers .offer-block .offer-item, .offers .offer-block .featured footer .container .offer-item, .featured footer .container .subscribe form input, .subscribe form .featured footer .container input, .featured footer .container .contacts .contact-form form input, .contacts .contact-form form .featured footer .container input {
         color: white;
         font-size: 20px;
         letter-spacing: 1px; }
         @media screen and (max-width: 767px) {
-          .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link, .featured footer .container .offers .offer-block .offer-item, .offers .offer-block .featured footer .container .offer-item, .featured footer .container .subscribe form input, .subscribe form .featured footer .container input {
+          .featured footer .container .main-font, .featured footer .container header .navbar .nav-item .nav-link, header .navbar .nav-item .featured footer .container .nav-link, .featured footer .container .offers .offer-block .offer-item, .offers .offer-block .featured footer .container .offer-item, .featured footer .container .subscribe form input, .subscribe form .featured footer .container input, .featured footer .container .contacts .contact-form form input, .contacts .contact-form form .featured footer .container input {
             margin-bottom: 40px; } }
-        .featured footer .container .main-font strong, .featured footer .container header .navbar .nav-item .nav-link strong, header .navbar .nav-item .featured footer .container .nav-link strong, .featured footer .container .offers .offer-block .offer-item strong, .offers .offer-block .featured footer .container .offer-item strong, .featured footer .container .subscribe form input strong, .subscribe form .featured footer .container input strong {
+        .featured footer .container .main-font strong, .featured footer .container header .navbar .nav-item .nav-link strong, header .navbar .nav-item .featured footer .container .nav-link strong, .featured footer .container .offers .offer-block .offer-item strong, .offers .offer-block .featured footer .container .offer-item strong, .featured footer .container .subscribe form input strong, .subscribe form .featured footer .container input strong, .featured footer .container .contacts .contact-form form input strong, .contacts .contact-form form .featured footer .container input strong {
           color: inherit; }
       .featured footer .container .custom-btn {
         color: white;
@@ -239,7 +239,7 @@ header {
     .service .item-container .service-slider .slide p:first-of-type {
       margin-bottom: 40px;
       font-size: 16px; }
-    .service .item-container .service-slider .main-font, .service .item-container .service-slider header .navbar .nav-item .nav-link, header .navbar .nav-item .service .item-container .service-slider .nav-link, .service .item-container .service-slider .offers .offer-block .offer-item, .offers .offer-block .service .item-container .service-slider .offer-item, .service .item-container .service-slider .subscribe form input, .subscribe form .service .item-container .service-slider input {
+    .service .item-container .service-slider .main-font, .service .item-container .service-slider header .navbar .nav-item .nav-link, header .navbar .nav-item .service .item-container .service-slider .nav-link, .service .item-container .service-slider .offers .offer-block .offer-item, .offers .offer-block .service .item-container .service-slider .offer-item, .service .item-container .service-slider .subscribe form input, .subscribe form .service .item-container .service-slider input, .service .item-container .service-slider .contacts .contact-form form input, .contacts .contact-form form .service .item-container .service-slider input {
       line-height: 25px; }
   .service .circle {
     position: relative;
@@ -269,7 +269,7 @@ header {
     color: #f3f3f3;
     margin-bottom: 60px;
     text-transform: uppercase; }
-  .impressed .main-font, .impressed header .navbar .nav-item .nav-link, header .navbar .nav-item .impressed .nav-link, .impressed .offers .offer-block .offer-item, .offers .offer-block .impressed .offer-item, .impressed .subscribe form input, .subscribe form .impressed input {
+  .impressed .main-font, .impressed header .navbar .nav-item .nav-link, header .navbar .nav-item .impressed .nav-link, .impressed .offers .offer-block .offer-item, .offers .offer-block .impressed .offer-item, .impressed .subscribe form input, .subscribe form .impressed input, .impressed .contacts .contact-form form input, .contacts .contact-form form .impressed input {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 50px; }
@@ -380,7 +380,7 @@ header {
             left: 0;
             bottom: -20px;
             background-color: #19bd9a; }
-        .portfolio .masonry-item .item-content .masonry-overlay .main-font, .portfolio .masonry-item .item-content .masonry-overlay header .navbar .nav-item .nav-link, header .navbar .nav-item .portfolio .masonry-item .item-content .masonry-overlay .nav-link, .portfolio .masonry-item .item-content .masonry-overlay .offers .offer-block .offer-item, .offers .offer-block .portfolio .masonry-item .item-content .masonry-overlay .offer-item, .portfolio .masonry-item .item-content .masonry-overlay .subscribe form input, .subscribe form .portfolio .masonry-item .item-content .masonry-overlay input {
+        .portfolio .masonry-item .item-content .masonry-overlay .main-font, .portfolio .masonry-item .item-content .masonry-overlay header .navbar .nav-item .nav-link, header .navbar .nav-item .portfolio .masonry-item .item-content .masonry-overlay .nav-link, .portfolio .masonry-item .item-content .masonry-overlay .offers .offer-block .offer-item, .offers .offer-block .portfolio .masonry-item .item-content .masonry-overlay .offer-item, .portfolio .masonry-item .item-content .masonry-overlay .subscribe form input, .subscribe form .portfolio .masonry-item .item-content .masonry-overlay input, .portfolio .masonry-item .item-content .masonry-overlay .contacts .contact-form form input, .contacts .contact-form form .portfolio .masonry-item .item-content .masonry-overlay input {
           font-size: 12px;
           line-height: 20px;
           margin-bottom: 30px; }
@@ -410,7 +410,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
-    .portfolio .start-project .main-font, .portfolio .start-project header .navbar .nav-item .nav-link, header .navbar .nav-item .portfolio .start-project .nav-link, .portfolio .start-project .offers .offer-block .offer-item, .offers .offer-block .portfolio .start-project .offer-item, .portfolio .start-project .subscribe form input, .subscribe form .portfolio .start-project input {
+    .portfolio .start-project .main-font, .portfolio .start-project header .navbar .nav-item .nav-link, header .navbar .nav-item .portfolio .start-project .nav-link, .portfolio .start-project .offers .offer-block .offer-item, .offers .offer-block .portfolio .start-project .offer-item, .portfolio .start-project .subscribe form input, .subscribe form .portfolio .start-project input, .portfolio .start-project .contacts .contact-form form input, .contacts .contact-form form .portfolio .start-project input {
       color: white;
       font-size: 20px;
       margin-bottom: 30px;
@@ -459,7 +459,7 @@ header {
           color: #81868e;
           text-transform: uppercase;
           margin-top: 20px; }
-      .team .team-content .description .main-font, .team .team-content .description header .navbar .nav-item .nav-link, header .navbar .nav-item .team .team-content .description .nav-link, .team .team-content .description .offers .offer-block .offer-item, .offers .offer-block .team .team-content .description .offer-item, .team .team-content .description .subscribe form input, .subscribe form .team .team-content .description input {
+      .team .team-content .description .main-font, .team .team-content .description header .navbar .nav-item .nav-link, header .navbar .nav-item .team .team-content .description .nav-link, .team .team-content .description .offers .offer-block .offer-item, .offers .offer-block .team .team-content .description .offer-item, .team .team-content .description .subscribe form input, .subscribe form .team .team-content .description input, .team .team-content .description .contacts .contact-form form input, .contacts .contact-form form .team .team-content .description input {
         margin-bottom: 50px; }
       .team .team-content .description .skills li {
         display: flex;
@@ -501,7 +501,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  .contact-us .main-font, .contact-us header .navbar .nav-item .nav-link, header .navbar .nav-item .contact-us .nav-link, .contact-us .offers .offer-block .offer-item, .offers .offer-block .contact-us .offer-item, .contact-us .subscribe form input, .subscribe form .contact-us input {
+  .contact-us .main-font, .contact-us header .navbar .nav-item .nav-link, header .navbar .nav-item .contact-us .nav-link, .contact-us .offers .offer-block .offer-item, .offers .offer-block .contact-us .offer-item, .contact-us .subscribe form input, .subscribe form .contact-us input, .contact-us .contacts .contact-form form input, .contacts .contact-form form .contact-us input {
     color: white;
     font-size: 20px;
     margin-bottom: 30px;
@@ -541,7 +541,7 @@ header {
       @media screen and (max-width: 767px) {
         .testimonials .slider-content .responder-photo {
           margin-bottom: 20px; } }
-    .testimonials .slider-content .description .main-font, .testimonials .slider-content .description header .navbar .nav-item .nav-link, header .navbar .nav-item .testimonials .slider-content .description .nav-link, .testimonials .slider-content .description .offers .offer-block .offer-item, .offers .offer-block .testimonials .slider-content .description .offer-item, .testimonials .slider-content .description .subscribe form input, .subscribe form .testimonials .slider-content .description input {
+    .testimonials .slider-content .description .main-font, .testimonials .slider-content .description header .navbar .nav-item .nav-link, header .navbar .nav-item .testimonials .slider-content .description .nav-link, .testimonials .slider-content .description .offers .offer-block .offer-item, .offers .offer-block .testimonials .slider-content .description .offer-item, .testimonials .slider-content .description .subscribe form input, .subscribe form .testimonials .slider-content .description input, .testimonials .slider-content .description .contacts .contact-form form input, .contacts .contact-form form .testimonials .slider-content .description input {
       margin-bottom: 30px; }
     .testimonials .slider-content .description .name {
       font-family: OpenSansBold, Arial, sans-serif;
@@ -610,7 +610,7 @@ header {
       font-size: 14px;
       color: #464646;
       margin-bottom: 50px; }
-    .news .news-slider .main-font, .news .news-slider header .navbar .nav-item .nav-link, header .navbar .nav-item .news .news-slider .nav-link, .news .news-slider .offers .offer-block .offer-item, .offers .offer-block .news .news-slider .offer-item, .news .news-slider .subscribe form input, .subscribe form .news .news-slider input {
+    .news .news-slider .main-font, .news .news-slider header .navbar .nav-item .nav-link, header .navbar .nav-item .news .news-slider .nav-link, .news .news-slider .offers .offer-block .offer-item, .offers .offer-block .news .news-slider .offer-item, .news .news-slider .subscribe form input, .subscribe form .news .news-slider input, .news .news-slider .contacts .contact-form form input, .contacts .contact-form form .news .news-slider input {
       margin-bottom: 80px; }
     .news .news-slider a.main-font, .news .news-slider header .navbar .nav-item a.nav-link, header .navbar .nav-item .news .news-slider a.nav-link, .news .news-slider .offers .offer-block a.offer-item, .offers .offer-block .news .news-slider a.offer-item {
       text-transform: capitalize; }
@@ -724,5 +724,74 @@ header {
       @media screen and (max-width: 575px) {
         .subscribe form button {
           flex-grow: 1; } }
+
+.contacts {
+  background-color: #f3f3f3; }
+  .contacts .header {
+    padding: 80px 0 100px 0; }
+  .contacts .content {
+    border: 1px solid #e7e7e7;
+    margin: auto;
+    max-width: 290px; }
+    @media screen and (max-width: 767px) {
+      .contacts .content {
+        margin: auto auto 20px auto; } }
+    .contacts .content header {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: no-repeat center center;
+      background-size: cover; }
+      .contacts .content header span {
+        color: white;
+        font-size: 50px; }
+    .contacts .content .info-title {
+      font-family: OpenSansRegular, Arial, sans-serif;
+      color: #464646;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px; }
+    .contacts .content .main-font, .contacts .content header .navbar .nav-item .nav-link, header .navbar .nav-item .contacts .content .nav-link, .contacts .content .offers .offer-block .offer-item, .offers .offer-block .contacts .content .offer-item, .contacts .content .subscribe form input, .subscribe form .contacts .content input, .contacts .content .contact-form form input, .contacts .contact-form form .content input {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 30px 0;
+      text-align: center; }
+  .contacts .contact-form {
+    background-color: white;
+    padding: 80px 0 100px 0; }
+    .contacts .contact-form form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .contacts .contact-form form input {
+        width: 28.5%;
+        border: 1px solid #d8dce0;
+        padding: 12px 25px;
+        margin-bottom: 30px; }
+        @media screen and (max-width: 991px) {
+          .contacts .contact-form form input {
+            width: 100%; } }
+      .contacts .contact-form form textarea {
+        width: 100%;
+        border: 1px solid #d8dce0;
+        height: 190px;
+        margin-bottom: 30px;
+        resize: none;
+        padding: 12px 25px;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        color: #81868e; }
+      .contacts .contact-form form button {
+        padding: 16px 0;
+        text-align: center;
+        background-color: #19bd9a;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

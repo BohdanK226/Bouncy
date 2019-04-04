@@ -909,9 +909,10 @@ header {
     margin: auto;
     max-width: 235px;
     border: 1px solid #e7e7e7;
-    @include max-screen(767px){
+    @include max-screen(767px) {
       margin-bottom: 20px;
     }
+
     .header {
       padding: 25px 0;
       font-family: OpenSansBold, Arial, sans-serif;
@@ -920,6 +921,7 @@ header {
       background-color: $green;
       text-transform: uppercase;
       text-align: center;
+
       a {
         font-size: 16px;
         font-family: OpenSansRegular, Arial, sans-serif;
@@ -949,12 +951,14 @@ header {
   .offer-block {
     .offer-item {
       @extend .main-font;
-      padding: 0 30px ;
+      padding: 0 30px;
       margin: 8px 0;
+
       &:first-of-type {
         margin-top: 30px;
       }
     }
+
     .mb {
       margin-bottom: 30px;
     }
@@ -965,17 +969,20 @@ header {
   padding: $paddings;
   background: url("../images/subscribe-bg.jpg") no-repeat center center;
   background-size: cover;
+
   .title {
     color: white;
   }
+
   form {
     display: flex;
     justify-content: center;
     max-width: 520px;
     margin: auto;
-    @include max-screen(575px){
+    @include max-screen(575px) {
       flex-direction: column;
     }
+
     input {
       @extend .main-font;
       border: 1px solid $gray;
@@ -983,10 +990,11 @@ header {
       flex-grow: 1;
       margin-right: 15px;
       background-color: transparent;
-      @include max-screen(575px){
+      @include max-screen(575px) {
         margin: 0 0 20px 0;
       }
     }
+
     button {
       padding: 16px 50px;
       background-color: $green;
@@ -996,8 +1004,99 @@ header {
       text-transform: uppercase;
       border: none;
       cursor: pointer;
-      @include max-screen(575px){
+      @include max-screen(575px) {
         flex-grow: 1;
+      }
+    }
+  }
+}
+
+.contacts {
+  .header {
+    padding: $paddings;
+  }
+  background-color: #f3f3f3;
+
+  .content {
+    border: 1px solid #e7e7e7;
+    margin: auto;
+    max-width: 290px;
+    @include max-screen(767px) {
+      margin: auto auto 20px auto;
+    }
+
+    header {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: no-repeat center center;
+      background-size: cover;
+
+      span {
+        color: white;
+        font-size: 50px;
+      }
+    }
+
+    .info-title {
+      font-family: OpenSansRegular, Arial, sans-serif;
+      color: #464646;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .main-font {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 30px 0;
+      text-align: center;
+    }
+  }
+
+  .contact-form {
+    background-color: white;
+    padding: $paddings;
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      input {
+        width: 28.5%;
+        @include max-screen(991px) {
+          width: 100%;
+        }
+        border: 1px solid #d8dce0;
+        padding: 12px 25px;
+        @extend .main-font;
+        margin-bottom: 30px;
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid #d8dce0;
+        height: 190px;
+        margin-bottom: 30px;
+        resize: none;
+        padding: 12px 25px;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        color: $gray;
+      }
+
+      button {
+        padding: 16px 0;
+        text-align: center;
+        background-color: $green;
+        font-family: OpenSansRegular, Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        width: 100%;
       }
     }
   }
