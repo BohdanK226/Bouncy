@@ -56,7 +56,7 @@ $(document).ready(function () {
         }
     );
 
-    // customize navs buttons
+    // function for changing active class on various menu on site
     function menu_togler(selector, clickElement) {
         if (!clickElement.hasClass('active')) {
             selector.each(function () {
@@ -116,12 +116,20 @@ $(document).ready(function () {
             circle_viewed = true;
         }
     });
-
+// configure masonry plugin
     $('.masonry-grid').masonry({
         // options
         itemSelector: '.masonry-item',
         columnWidth: '.persent-size',
         horizontalOrder: true,
         percentPosition: true
+    });
+    // code for smooth scrolling page
+    var $page = $('html, body');
+    $('header nav a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1500);
+        return false;
     });
 });
