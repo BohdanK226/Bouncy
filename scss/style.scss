@@ -960,3 +960,45 @@ header {
     }
   }
 }
+
+.subscribe {
+  padding: $paddings;
+  background: url("../images/subscribe-bg.jpg") no-repeat center center;
+  background-size: cover;
+  .title {
+    color: white;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    max-width: 520px;
+    margin: auto;
+    @include max-screen(575px){
+      flex-direction: column;
+    }
+    input {
+      @extend .main-font;
+      border: 1px solid $gray;
+      padding: 12px 20px;
+      flex-grow: 1;
+      margin-right: 15px;
+      background-color: transparent;
+      @include max-screen(575px){
+        margin: 0 0 20px 0;
+      }
+    }
+    button {
+      padding: 16px 50px;
+      background-color: $green;
+      font-family: OpenSansRegular, Arial, sans-serif;
+      font-size: 14px;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      @include max-screen(575px){
+        flex-grow: 1;
+      }
+    }
+  }
+}
